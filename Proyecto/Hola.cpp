@@ -1,5 +1,4 @@
-#include <iostream.h>
-#include <stdio.h>
+#include <cstdio.h>
 
 using namespace std;
 
