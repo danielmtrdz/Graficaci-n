@@ -1,4 +1,4 @@
-#include <cstdio.h>
+#include <cstdio>
 
 using namespace std;
 
