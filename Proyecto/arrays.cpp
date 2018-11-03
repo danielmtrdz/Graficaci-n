@@ -3,25 +3,45 @@
 
 using namespace std;
 	
-	//Crear arreglo de 10 posiciones y llenarlo usando los primeros
-	//10 numeros primos
+	/*Programa que pide un valor aleatorio, crea un arreglo
+	con esa cantidad de espacios e imprime el valor en la 
+	posicion elegida por el usuario */
+	
+	
+int main() {
+	
+	int val;
+	int a;
+	int j;
+	cout<<"Ingresa el número de espacios entre 1 y 100 "<<endl;
+	cin>> a;
+	int num [a];
+		
 
-	int num [10] {2,3,5,7,13,17,19,23,29,31};
-	
-	
-	int main()
-	{
-	
-	
-	for (int i=0; i < 10; i++)
- 	   {
+	for (int i = 0; i <= a; i++) {
+		
+	j = rand() % 101;
+	  num[i] = j;
 
-	   cout<< num[i] << endl;	  		   
-	   
-	   }
+	}
+
+	cout<<"Posición a imprimir"<<endl;
+	cin>>val;
+	
+	if(val <= a) {
+	
+	cout<<"El valor en esta posición es: ";
+	cout<<num[val-1]<<endl;
+	
+	}
+
+	else{
+	cout<<"Valor incorrecto"<<endl;
+	
+	}
 	
 	return 0;
 
-	}
+}
 
 
